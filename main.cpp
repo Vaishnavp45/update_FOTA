@@ -2,8 +2,8 @@
 #include <HTTPClient.h>
 #include <SPIFFS.h>
  
-const char* ssid = "POCO C65"; // Your WiFi SSID
-const char* password = "00000000"; // Your WiFi password
+const char* ssid = "wifi"; // Your WiFi SSID
+const char* password = "password"; // Your WiFi password
 const char* serverUrlV1 = "https://vaishnavp45.github.io/update_FOTA/V1_new_001.hex"; // URL for new firmware
  
 // Forward declarations
