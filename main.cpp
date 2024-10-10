@@ -140,7 +140,10 @@ void checkAndUpdateFirmware() {
     }
  
     printPartitionInfo("/partition1/V1_new_001.hex");
+    Serial.printf("\nPrinting data from 2nd partition...\n");
+    delay(5000);
     printPartitionInfo("/partition2/V1_old.hex");
+    Serial.printf("\nEnd of printing both the partitions\n");
     delay(5000);
     isUpdating = false;
 }
@@ -173,6 +176,8 @@ void swapPartitions() {
         sourceFile.close();
         destFile.close();
         printPartitionInfo("/partition1/V1_new_001.hex");
+        Serial.printf("\nPrinting data from 2nd partition...\n");
+        delay(5000);
         printPartitionInfo("/partition2/V1_old.hex");
         Serial.println("\nFirmware copied successfully.");
     } else {
