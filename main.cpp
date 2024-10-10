@@ -1,6 +1,3 @@
-/*This code will interrupt the trigger when wire is connected to GND but if we connect the wire to GND while 
-data is printing it will not check that and also it will not trigger after finishing of printing of data*/
-
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <SPIFFS.h>
